@@ -1,0 +1,57 @@
+.Popular {
+    background-color: #000000;
+    height: 130vh;
+}
+
+.popular-card {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.p-img {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.View-btn {
+    border: 1.5px solid #1e1e1e;
+    color: #1e1e1e;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 20px;
+    margin: 0.5rem 5rem 1rem 0.5rem;
+    background-color: transparent;
+    padding: 0.5rem 1rem;
+}
+
+.View-btn:hover {
+    background-color: #f8c365;
+    color: #1e1e1e;
+}
+
+@media only screen and (max-width: 575.98px) {
+    .Popular {
+
+        height: 125 !important;
+    }
+}
+
+.popu-hs {
+    font-size: 40px;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 30px;
+    text-align: center;
+    padding: 4rem 0 2rem 0;
+}
+
+.popu-span {
+    border: 2px solid #f8c365;
+    color: #f8c365;
+    font-size: 40px;
+    font-weight: bold;
+    border-radius: 50px;
+    padding: 0px 9px 4px 8px;
+    align-items: center;
+    margin-left: 10px;
+}

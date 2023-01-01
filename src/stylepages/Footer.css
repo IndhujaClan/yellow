@@ -1,0 +1,67 @@
+.Footer {
+    background-color: #000000;
+    border-radius: 40px 40px 0px 0px;
+    width: 80%;
+    margin: 0 auto;
+    height: 360px;
+    position: absolute;
+    top: 132%;
+    padding: 4rem;
+    left: 10%;
+}
+
+.hs-footer {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.Pera-footer {
+    font-size: 14px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.Bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 6rem 4rem 0rem 0rem;
+}
+
+.Pera-footer1 {
+    padding-top: 3.8rem;
+    font-size: 14px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+@media only screen and (max-width: 575.98px) {
+    .Footer {
+        background-color: #000000;
+        border-radius: 40px 40px 0px 0px;
+        height: 100vh;
+        top: 132%;
+        padding: 2rem;
+        left: 10%;
+    }
+
+    .Pera-footer {
+        font-size: 13px;
+
+    }
+
+    .Bottom {
+        display: block;
+        padding: 3rem 0rem;
+        text-align: center;
+    }
+
+    .Pera-footer1 {
+        padding: 2rem 0rem;
+
+    }
+
+    .top {
+        text-align: center;
+    }
+}

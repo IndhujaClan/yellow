@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,900&display=swap');
+
+.App {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+.navbar-light .navbar-nav .nav-link {
+
+  color: #000000;
+  font-weight: bold;
+  font-size: 17px;
+  margin-right: 15px;
+}

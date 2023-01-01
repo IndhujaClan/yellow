@@ -1,0 +1,240 @@
+.HomeBanner {
+    height: 1040px;
+
+}
+
+.FirstBanner {
+    height: 700px;
+    background-color: #f8c365;
+}
+
+.Header {
+    display: flex;
+    padding-top: 20px;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.Login-btn {
+    color: #000000;
+    font-weight: bold;
+    background-color: transparent;
+    border: 0;
+    margin-right: 15px;
+    font-size: 17px;
+}
+
+.Login-btn:hover {
+    color: white;
+    border-radius: 18px;
+    background-color: #000000;
+}
+
+.signin-btn:hover {
+    color: #000000;
+    background-color: #ffffff;
+
+}
+
+.yellow {
+    object-fit: contain;
+    width: 120px;
+    height: 40px;
+}
+
+.signin-btn {
+    color: #ffffff;
+    font-weight: bold;
+    background-color: #1d1d1d;
+    border: 0;
+    border-radius: 18px;
+    font-size: 17px;
+}
+
+.Contant {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2.5rem;
+}
+
+.hsize {
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 575.98px) {
+    .group-img {
+        width: 340px !important;
+        height: 152px !important;
+    }
+
+    .Rect-img {
+        width: 315px !important;
+        height: 203px !important;
+
+    }
+
+    .design-img {
+        display: none;
+    }
+
+    .yellow {
+        width: 80px;
+        height: 30px;
+        margin-top: 6px;
+    }
+
+    .pera {
+        font-size: 18px !important;
+    }
+
+    .Header {
+        width: 90% !important;
+    }
+
+    .right {
+        padding: 2rem 1rem 3rem 1rem !important;
+    }
+
+    /* .Vector-img {
+        left: 6rem !important;
+        top: 16rem !important;
+        width: 40px !important;
+        height: 40px !important;
+    } */
+    .Vector-img {
+        display: none;
+    }
+
+    .Vector-img1 {
+        display: none;
+    }
+
+    .SecondBanner {
+
+        padding-top: 2rem !important;
+    }
+
+    .line {
+        display: none;
+    }
+
+    .right-img {
+        display: none;
+    }
+}
+
+.sumbit-btn {
+    font-size: 18px;
+    padding: 7px;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-top: 15px;
+    background-color: #f8c365;
+    color: #000000;
+    border: 0;
+}
+
+.navbar>.container {
+    display: inline-block !important;
+}
+
+.sumbit-btn:hover {
+    color: white;
+
+    background-color: #000000;
+}
+
+.right-img {
+    position: absolute;
+    top: 31%;
+    right: 0%;
+}
+
+.group-img {
+    width: 600px;
+    height: 250px;
+}
+
+.Rect-img {
+    width: 650px;
+    height: 400px;
+}
+
+.design-img {
+    position: absolute;
+    left: -13px;
+    bottom: 7vh;
+}
+
+.right {
+    padding: 4rem 0rem 0rem 4rem;
+}
+
+.Vector-img {
+    position: absolute;
+    left: 15rem;
+}
+
+.Vector-img1 {
+    position: absolute;
+    bottom: 1.5rem;
+}
+
+.pera {
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: bold;
+}
+
+.Enroll-btn {
+
+    background-color: transparent;
+    color: #000000;
+    border: 2px solid #1d1d1d;
+    font-weight: bold;
+    font-size: 17px;
+    border-radius: 50px;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+
+}
+
+.Enroll-btn:hover {
+    color: #1d1d1d;
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+
+
+}
+
+.arrow {
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    object-fit: contain;
+}
+
+.SecondBanner {
+    width: 90%;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+    height: 300px;
+    padding-top: 7rem;
+}
+
+.line {
+    padding: 1rem 3rem 0px 0px;
+    font-size: 30px;
+    color: #decb85;
+}
+
+.pera-size {
+    font-size: 11px;
+    color: #a9a9a9;
+}
