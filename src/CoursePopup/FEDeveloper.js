@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Con2 from "../image/con_2.png";
+import img2 from "../image/img2.png";
 import Star from "../image/Star 3.png";
 import { Button, Card, Modal } from 'react-bootstrap'
 
@@ -11,8 +11,8 @@ function FEDeveloper() {
   return (
     <div>
       <Card>
-        <img variant="top" src={Con2}
-          className='Group-img2' width={180} height={130} style={{ paddingLeft: "3rem" }} />
+        <img variant="top" src={img2}
+          className='Group-img2' width={200} height={130} />
         <Card.Body>
           <p className='p-img'><img src={Star} width={10} height={10}
             style={{

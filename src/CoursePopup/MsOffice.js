@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Button, Card, Modal } from 'react-bootstrap'
-import Con1 from "../image/con_1.png";
+import img1 from "../image/img1.png";
 import Star from "../image/Star 3.png";
 
 function MsOffice() {
@@ -11,8 +11,8 @@ function MsOffice() {
     return (
         <div>
             <Card>
-                <img variant="top" src={Con1}
-                    className='Group-img2' width={180} height={130} style={{ paddingLeft: "3rem" }} />
+                <img variant="top" src={img1}
+                    className='Group-img2' width={150} height={130} style={{ marginLeft: "1rem" }} />
                 <Card.Body>
                     <p className='p-img'><img src={Star} width={10} height={10}
                         style={{

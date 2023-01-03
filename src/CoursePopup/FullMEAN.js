@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Button, Card, Modal } from 'react-bootstrap'
-import Con6 from "../image/con_6.png";
+import img7 from "../image/img7.png";
 import Star from "../image/Star 3.png";
 
 function FullMEAN() {
@@ -11,8 +11,8 @@ function FullMEAN() {
     return (
         <div>
             <Card>
-                <img variant="top" src={Con6}
-                    className='Group-img2' width={180} height={130} style={{ paddingLeft: "3rem" }} />
+                <img variant="top" src={img7}
+                    className='Group-img2' width={150} height={130} style={{ marginLeft: "1rem" }} />
                 <Card.Body>
                     <p className='p-img'><img src={Star} width={10} height={10}
                         style={{

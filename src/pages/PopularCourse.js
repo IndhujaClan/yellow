@@ -1,14 +1,7 @@
 import React, { useState } from 'react'
 import { Button, Card, CarouselItem, Col, Modal, Row } from 'react-bootstrap'
-import Con1 from "../image/con_1.png";
-import Con2 from "../image/con_2.png";
-import Con3 from "../image/con_3.png";
-import Con4 from "../image/con_4.png";
-import Con5 from "../image/con_5.png";
-import Con6 from "../image/con_6.png";
 import Star from "../image/Star 3.png";
 import '../stylepages/PopularCourse.css';
-
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import Item from '../Item';
@@ -43,11 +36,6 @@ const responsive = {
     }
 };
 function PopularCourse() {
-
-    const [show, setShow] = useState(false);
-
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
 
     return (
 

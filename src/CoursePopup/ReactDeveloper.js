@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Button, Card, Modal } from 'react-bootstrap'
-import Con3 from "../image/con_3.png";
+import img3 from "../image/img3.png";
 import Star from "../image/Star 3.png";
 
 function ReactDeveloper() {
@@ -11,8 +11,8 @@ function ReactDeveloper() {
     return (
         <div>
             <Card>
-                <img variant="top" src={Con3}
-                    className='Group-img2' width={180} height={130} style={{ paddingLeft: "3rem" }} />
+                <img variant="top" src={img3}
+                    className='Group-img2' width={150} height={130} style={{ marginLeft: "1rem" }} />
                 <Card.Body>
                     <p className='p-img'><img src={Star} width={10} height={10}
                         style={{

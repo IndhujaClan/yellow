@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Button, Card, Modal } from 'react-bootstrap'
-import Con8 from "../image/con_8.png";
+import img12 from "../image/img12.png";
 import Star from "../image/Star 3.png";
 
 
@@ -12,8 +12,8 @@ function MobileAndroid() {
     return (
         <div>
             <Card>
-                <img variant="top" src={Con8}
-                    className='Group-img2' width={180} height={130} style={{ paddingLeft: "3rem" }} />
+                <img variant="top" src={img12}
+                    className='Group-img2' width={160} height={130} style={{ marginLeft: "1rem" }} />
                 <Card.Body>
                     <p className='p-img'><img src={Star} width={10} height={10}
                         style={{

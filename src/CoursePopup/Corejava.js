@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Con10 from "../image/con_10.png";
+import img8 from "../image/img8.png";
 import Star from "../image/Star 3.png";
 import { Button, Card, Modal } from 'react-bootstrap'
 
@@ -11,8 +11,8 @@ function Corejava() {
     return (
         <div>
             <Card>
-                <img variant="top" src={Con10}
-                    className='Group-img2' width={220} height={130} />
+                <img variant="top" src={img8}
+                    className='Group-img2' width={150} height={130} style={{ marginLeft: '1rem' }} />
                 <Card.Body>
                     <p className='p-img'><img src={Star} width={10} height={10}
                         style={{

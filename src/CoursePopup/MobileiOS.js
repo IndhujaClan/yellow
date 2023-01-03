@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Button, Card, Modal } from 'react-bootstrap'
-import Con7 from "../image/con_7.png";
+import img10 from "../image/img10.jpg";
 import Star from "../image/Star 3.png";
 
 function MobileiOS() {
@@ -11,8 +11,8 @@ function MobileiOS() {
     return (
         <div>
             <Card>
-                <img variant="top" src={Con7}
-                    className='Group-img2' width={180} height={130} style={{ paddingLeft: "3rem" }} />
+                <img variant="top" src={img10}
+                    className='Group-img2' width={150} height={130} style={{ marginLeft: "1rem" }} />
                 <Card.Body>
                     <p className='p-img'><img src={Star} width={10} height={10}
                         style={{

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Button, Card, Modal } from 'react-bootstrap'
-import Con6 from "../image/con_6.png";
+import img6 from "../image/img6.png";
 import Star from "../image/Star 3.png";
 
 function FulllDep() {
@@ -11,7 +11,7 @@ function FulllDep() {
     return (
         <div>
             <Card>
-                <img variant="top" src={Con6}
+                <img variant="top" src={img6}
                     className='Group-img2' width={180} height={130} style={{ paddingLeft: "3rem" }} />
                 <Card.Body>
                     <p className='p-img'><img src={Star} width={10} height={10}

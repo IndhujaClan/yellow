@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Button, Card, Modal } from 'react-bootstrap'
-import Con9 from "../image/con_9.png";
+import img9 from "../image/img9.png";
 import Star from "../image/Star 3.png";
 
 
@@ -12,8 +12,8 @@ function Net() {
   return (
     <div>
       <Card>
-        <img variant="top" src={Con9}
-          className='Group-img2' width={180} height={130} style={{ paddingLeft: "3rem" }} />
+        <img variant="top" src={img9}
+          className='Group-img2' width={180} height={130} style={{ marginLeft: "1rem" }} />
         <Card.Body>
           <p className='p-img'><img src={Star} width={10} height={10}
             style={{
