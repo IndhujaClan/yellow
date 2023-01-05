@@ -1,5 +1,5 @@
 .OurFeature {
-    height: 900px;
+    height: 842px;
 }
 
 .Top {
@@ -10,13 +10,13 @@
 .BlackPart {
     background-color: #000000;
     border-radius: 8px;
-    height: 322px;
+    height: 300px;
     margin-left: 32px;
     margin-right: 33px;
 }
 
 .Feature {
-    height: 800px;
+    height: 742px;
     background-color: #faf7f1;
 }
 

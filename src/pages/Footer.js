@@ -43,10 +43,7 @@ function Footer() {
                 </Row>
 
             </div>
-            <div className='Bottom'>
-                <p className='Pera-footer'>@ Musemind  2022 | All right reserved </p>
-                <p className='Pera-footer'>Terms & Privacy policy</p>
-            </div>
+
         </div>
     )
 }

@@ -3,7 +3,7 @@
     border-radius: 40px 40px 0px 0px;
     width: 80%;
     margin: 0 auto;
-    height: 360px;
+    height: 300px;
     position: absolute;
     top: 132%;
     padding: 4rem;
@@ -22,11 +22,7 @@
     color: rgba(255, 255, 255, 0.5);
 }
 
-.Bottom {
-    display: flex;
-    justify-content: space-between;
-    padding: 6rem 4rem 0rem 0rem;
-}
+
 
 .Pera-footer1 {
     padding-top: 3.8rem;

@@ -19,7 +19,7 @@ function ReactDeveloper() {
                             marginRight: '7px',
                             marginBottom: '4px'
                         }} />4.9( 430 Reviews)</p>
-                    <Card.Text style={{ fontWeight: 'bold', fontSize: '14px' }}>
+                    <Card.Text style={{ fontWeight: 'bold', fontSize: '16px' }}>
                         React Developer
                     </Card.Text>
                 </Card.Body>

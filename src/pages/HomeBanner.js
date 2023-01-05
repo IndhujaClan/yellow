@@ -6,10 +6,11 @@ import Vector from "../image/Vector 8.png";
 import Vect from "../image/Vector 6.png";
 import design from "../image/design.png";
 import Arrow from "../image/arrow.png";
-import yellow from "../image/yellow.PNG";
+import yellow from "../image/Mento.png";
 import logo from "../image/logo.jpg";
 import right from "../image/banner design (1).png";
 import '../stylepages/HomeBanner.css'
+import { Link } from "react-scroll";
 
 function HomeBanner() {
     const [show, setShow] = useState(false);
@@ -21,31 +22,43 @@ function HomeBanner() {
             <div className='FirstBanner'>
                 <div className='Header'>
                     <div className='leftpart'>
+                        <img src={yellow} className='yellow' />
+                    </div>
+                    <div className='rightpart'>
                         <Navbar expand="lg" style={{ paddingTop: '0rem' }}>
                             <Container>
-
                                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                                 <Navbar.Collapse id="basic-navbar-nav">
                                     <Nav className="me-auto">
                                         <Nav.Link href="#home"
                                         >
-                                            Home
+                                            <Link
+                                                to=" Home"
+                                                spy={true}
+                                                smooth={true}
+                                                duration={100}
+                                                delay={1000}
+                                            >
+                                                Home
+                                            </Link>
+
                                         </Nav.Link>
-                                        <Nav.Link href="#link"
+                                        <Nav.Link href="#course"
                                         >
-                                            Course
+                                            <Link
+                                                to="Popular"
+                                                spy={true}
+                                                smooth={true}
+                                                duration={100}
+                                                delay={1000}
+                                            >
+                                                Course
+                                            </Link>
                                         </Nav.Link>
                                     </Nav>
                                 </Navbar.Collapse>
                             </Container>
                         </Navbar>
-                    </div>
-                    <div className='center'>
-                        <img src={yellow} className='yellow' />
-                    </div>
-                    <div className='rightpart'>
-                        <Button type='button' className='Login-btn'>Login</Button>
-                        <Button type='button' className='signin-btn'>Sign in</Button>
                     </div>
                 </div>
                 <div className='Contant'>
@@ -68,7 +81,7 @@ function HomeBanner() {
                             <div className='right'>
                                 <p className='pera'>Kick start your career in IT by learning the skills that<br></br>
                                     Can help you get your first job easier and faster .</p>
-                                <Button type='button' className='Enroll-btn'>Enroll Now<img src={Arrow} className="arrow" onClick={handleShow} /></Button>
+                                <Button type='button' className='Enroll-btn' onClick={handleShow} >Enroll Now<img src={Arrow} className="arrow" /></Button>
                                 <Modal show={show} onHide={handleClose} >
                                     <Modal.Header closeButton>
                                         <Modal.Title>
