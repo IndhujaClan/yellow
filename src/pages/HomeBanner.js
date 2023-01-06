@@ -6,7 +6,7 @@ import Vector from "../image/Vector 8.png";
 import Vect from "../image/Vector 6.png";
 import design from "../image/design.png";
 import Arrow from "../image/arrow.png";
-import yellow from "../image/Mento.png";
+import yellow from "../image/Mento.jpg";
 import logo from "../image/logo.jpg";
 import right from "../image/banner design (1).png";
 import '../stylepages/HomeBanner.css'
