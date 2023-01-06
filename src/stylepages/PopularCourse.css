@@ -1,6 +1,6 @@
 .Popular {
     background-color: #000000;
-    height: 120vh;
+    padding-bottom: 5rem;
 }
 
 .popular-card {
@@ -9,8 +9,9 @@
 }
 
 .p-img {
-    font-size: 12px;
+    font-size: 14px;
     color: rgba(0, 0, 0, 0.5);
+    text-align: center;
 }
 
 .View-btn {
@@ -19,7 +20,7 @@
     font-size: 14px;
     font-weight: bold;
     border-radius: 20px;
-    margin: 0.5rem 5rem 1rem 0.5rem;
+    margin: 0.5rem 1rem 1rem 0.5rem;
     background-color: transparent;
     padding: 0.5rem 1rem;
 }
@@ -29,12 +30,23 @@
     color: #1e1e1e;
 }
 
-@media only screen and (max-width: 575.98px) {
+.Group-img2 {
+    margin: 0 auto;
+    object-fit: contain;
+}
+
+/* @media only screen and (max-width: 575.98px) {
     .Popular {
 
         height: 125 !important;
     }
-}
+} */
+
+/* @media (max-width: 1400px) {
+    .Popular {
+        height: 118vh !important;
+    }
+} */
 
 .popu-hs {
     font-size: 40px;

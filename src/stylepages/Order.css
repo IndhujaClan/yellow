@@ -1,6 +1,7 @@
 .Order {
     height: 500px;
     position: relative;
+    background-color: #fff6e5;
 }
 
 .Order-Contant {
@@ -47,7 +48,7 @@
 }
 
 .Mobileapp {
-    height: 114vh;
+    height: 100vh;
     background-color: #fff6e5;
 
 }
@@ -87,10 +88,10 @@
         top: -50%
     }
 
-    .Mobileapp {
+    /* .Mobileapp {
         height: 187vh;
 
-    }
+    } */
 
     .conimg1 {
         width: 200px;
@@ -120,6 +121,13 @@
 
 
 }
+
+/* @media (max-width: 1400px) {
+    .Mobileapp {
+        height: 116vh !important;
+
+    }
+} */
 
 .image2 {
     display: flex;

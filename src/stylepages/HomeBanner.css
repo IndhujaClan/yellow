@@ -4,7 +4,7 @@
 }
 
 .FirstBanner {
-    height: 700px;
+
     background-color: #f8c365;
 }
 
@@ -127,6 +127,29 @@
         display: none;
     }
 }
+
+/* @media (max-width: 1400px) {
+    .FirstBanner {
+        height: 770px !important;
+    }
+
+    .HomeBanner {
+        height: 1100px;
+
+    }
+
+    .Rect-img {
+        width: 666px !important;
+        height: 481px !important;
+
+    }
+
+    .Vector-img {
+        bottom: 50% !important;
+    }
+} */
+
+@media (min-width: 992px) {}
 
 .sumbit-btn {
     font-size: 18px;

@@ -172,10 +172,10 @@ function HomeBanner() {
                 <Row style={{ justifyContent: 'center' }}>
                     <Col md={2} xs={6}>
                         <h1 className='hsize'>
-                            4.5
+                            10+
                         </h1>
                         <p className='pera-size'>
-                            80k reviews
+                            Technical Courses
                         </p>
                     </Col>
                     <Col md={1} xs={0}>
@@ -183,10 +183,9 @@ function HomeBanner() {
                     </Col>
                     <Col md={2} xs={6}>
                         <h1 className='hsize'>
-                            30M
+                            15+
                         </h1>
                         <p className='pera-size'>
-
                             Enrollments
                         </p>
                     </Col>
@@ -195,10 +194,10 @@ function HomeBanner() {
                     </Col>
                     <Col md={2} xs={6}>
                         <h1 className='hsize'>
-                            2m+
+                            4+
                         </h1>
                         <p className='pera-size'>
-                            Learners
+                            Industry Tie-Ups
                         </p>
                     </Col>
                     <Col md={1} xs={0}>
@@ -206,11 +205,10 @@ function HomeBanner() {
                     </Col>
                     <Col md={2} xs={6}>
                         <h1 className='hsize'>
-                            8+
+                            4.8
                         </h1>
                         <p className='pera-size'>
-
-                            Popular Coures
+                            Rating
                         </p>
                     </Col>
                 </Row>
