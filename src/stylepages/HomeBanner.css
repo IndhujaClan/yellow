@@ -9,9 +9,7 @@
 }
 
 .Header {
-    display: flex;
     padding-top: 20px;
-    justify-content: space-between;
     width: 80%;
     margin: 0 auto;
 }

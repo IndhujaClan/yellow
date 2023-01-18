@@ -11,6 +11,47 @@ function FEDeveloper() {
   const ClickShow = () => setClickShow(true);
   const handleClose = () => sethandleShow(false);
   const handleShow = () => sethandleShow(true);
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [mobile, setMobile] = useState("");
+  const [altmobile, setAltMobile] = useState("");
+  const [ypassing, setYpassing] = useState("");
+  const [graduation, setGraduation] = useState("");
+  const [course, setCourse] = useState("");
+
+  const handleSumbit = () => {
+    // const payment = {
+    //   name: name,
+    //   email: email,
+    //   mobile: mobile,
+    //   altmobile: altmobile,
+    //   ypassing: ypassing,
+    //   graduation: graduation,
+    //   course: course
+    // }
+    // console.log(payment);
+    const webhookURL = 'https://chat.googleapis.com/v1/spaces/AAAATFjjny4/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=qnNSG08dhWk0onOFV6O41M8-Ji9SQ-M_7CvP9rtiIPg%3D'
+
+    const data = JSON.stringify({
+
+
+      "text": `Name:${name}\nEmail:${name}\nMobile:${mobile}\nAltMobile:${altmobile}\nYearOfPassing:${ypassing}\nGraduation:${graduation}\nCourse:${course}`
+
+    });
+    let resp;
+    fetch(webhookURL, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json;charset=UTF-8',
+      },
+      body: data,
+    }).then((response) => {
+      resp = response;
+      console.log(response);
+    });
+
+
+  }
 
 
   return (
@@ -28,7 +69,7 @@ function FEDeveloper() {
             Front-End Developer
           </Card.Text>
         </Card.Body>
-        <Card.Footer>
+        <Card.Footer className='btn-footer'>
           <Button type='button' className='View-btn' onClick={handleShow}>View Course</Button>
           <Button type='button' className='View-btn' onClick={ClickShow} >Enroll Now<img src={Arrow} className="arrow" /></Button>
         </Card.Footer>
@@ -59,47 +100,68 @@ function FEDeveloper() {
               Register your Interest</Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            <Form>
+            <Form onSubmit={handleSumbit}>
               <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
                 <Form.Label><b>Name</b></Form.Label>
-                <Form.Control type="name" />
+                <Form.Control type="name" value={name} required={true}
+                  onChange={(event) => setName(event.target.value)} />
               </Form.Group>
               <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
                 <Form.Label><b>Email address</b></Form.Label>
-                <Form.Control type="email" />
+                <Form.Control type="email" value={email} required={true}
+                  onChange={(event) => setEmail(event.target.value)} />
               </Form.Group>
               <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
                 <Form.Label><b>Mobile Number</b></Form.Label>
-                <Form.Control type="taxt" />
+                <Form.Control type="taxt" value={mobile} required={true}
+                  pattern="[6789][0-9]{9}"
+                  onChange={(event) => setMobile(event.target.value)} />
               </Form.Group>
               <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
                 <Form.Label><b> Alternate Mobile Number</b></Form.Label>
-                <Form.Control type="taxt" />
+                <Form.Control type="taxt" value={altmobile} required={true}
+                  pattern="[6789][0-9]{9}"
+                  onChange={(event) => setAltMobile(event.target.value)} />
               </Form.Group>
               <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
                 <Form.Label><b> Year of Passing</b></Form.Label>
-                <Form.Control type="taxt" />
+                <Form.Control type="taxt" value={ypassing} required={true}
+                  onChange={(event) => setYpassing(event.target.value)} />
               </Form.Group>
               <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
                 <Form.Label> <b>Graduation</b></Form.Label>
-                <Form.Control type="taxt" />
+                <Form.Control type="taxt" value={graduation} required={true}
+                  onChange={(event) => setGraduation(event.target.value)} />
               </Form.Group>
               <Form.Label><b>Course of your choice</b></Form.Label>
 
-              <Form.Select aria-label="Default select example">
-                <option value="1"></option>
-                <option value="1">Front End Developer</option>
-                <option value="2">React Developer</option>
-                <option value="3"> Microsoft Office</option>
-                <option value="1">Angular Developer</option>
-                <option value="2">Software Testing</option>
-                <option value="3"> .Net</option>
-                <option value="1">Full Stack Developer (MERN)</option>
-                <option value="2">Full Stack Developer (MEAN)</option>
-                <option value="3"> Core Java</option>
-                <option value="1">Visual Design</option>
-                <option value="2">Mobile Application Developer (Android)</option>
-                <option value="3"> Mobile Application Developer</option>
+              <Form.Select aria-label="Default select example" value={course}
+                onChange={(event) => setCourse(event.target.value)} required={true}>
+                <option value="1">Course of your choice</option>
+                <option value="Front End Developer"
+                >Front End Developer</option>
+                <option value="React Developer"
+                >React Developer</option>
+                <option value="Microsoft Office"
+                > Microsoft Office</option>
+                <option value="Angular Developer"
+                >Angular Developer</option>
+                <option value="Software Testing"
+                >Software Testing</option>
+                <option value=".Net"
+                > .Net</option>
+                <option value="Full Stack Developer (MERN)"
+                >Full Stack Developer (MERN)</option>
+                <option value="Full Stack Developer (MEAN)"
+                >Full Stack Developer (MEAN)</option>
+                <option value="Core Java"
+                > Core Java</option>
+                <option value="Visual Design"
+                >Visual Design</option>
+                <option value="Mobile Application Developer (Android)"
+                >Mobile Application Developer (Android)</option>
+                <option value="Mobile Application Developer"
+                > Mobile Application Developer</option>
               </Form.Select>
               <Button type='submit' className='sumbit-btn'>Submit</Button>
             </Form>

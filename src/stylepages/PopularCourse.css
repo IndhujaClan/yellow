@@ -47,6 +47,9 @@
         height: 118vh !important;
     }
 } */
+.btn-footer {
+    text-align: center;
+}
 
 .popu-hs {
     font-size: 40px;

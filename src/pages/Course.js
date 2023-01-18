@@ -19,7 +19,7 @@ function Course() {
                             Just an laptop with internet connectivity is
                             all that is need and we will take care of the rest.
                             Courses and deliverables as customised so as to
-                            eanble elarning things by doing</p>
+                            eanble learning things by doing</p>
                     </Col>
                 </Row>
             </div>

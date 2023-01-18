@@ -26,9 +26,9 @@ function Footer() {
 
                     </Col>
                     <Col md={3} style={{ justifyContent: 'center' }}>
-                        <h1 className='hs-footer'>Product</h1>
-                        <p className='Pera-footer'>Pricing</p>
-                        <p className='Pera-footer'>Enterprise</p>
+                        <h1 className='hs-footer'>Contact Us</h1>
+                        <p className='Pera-footer'>9884543386</p>
+                        <a href='admissions@mentospace.com' style={{ textDecoration: 'none' }}><spen className='Pera-footer'>admissions@mentospace.com</spen></a>
 
                     </Col>
                     <Col md={1}>

@@ -37,10 +37,10 @@ function OurFeature() {
                   className='Group-img2' width={90} height={75} style={{ margin: '20px 0px 0px 20px' }} />
                 <Card.Body>
                   <Card.Title style={{ fontWeight: 'bold' }}>Get Certificate</Card.Title>
-                  <Card.Text><p className='Card-pera'>Get a certificate but we ensure
+                  <Card.Text><span className='Card-pera'>Get a certificate but we ensure
                     you get more than just a certificate.
-                    You actually get the skills menationed
-                    in your certificate.</p>
+                    You actually get the skills mentioned
+                    in your certificate.</span>
 
                   </Card.Text>
                 </Card.Body>
@@ -55,8 +55,8 @@ function OurFeature() {
                   ={{ margin: '20px 0px 0px 20px' }} />
                 <Card.Body>
                   <Card.Title style={{ fontWeight: 'bold' }}>Amazing Instructor</Card.Title>
-                  <Card.Text><p className='Card-pera'>Our amazing Instructor are industry experts who bring along  Experience. Knowledge And Fun
-                    On The Table</p>
+                  <Card.Text><span className='Card-pera'>Our amazing Instructor are industry experts who bring along  Experience. Knowledge And Fun
+                    On The Table</span>
 
                   </Card.Text>
                 </Card.Body>
@@ -69,7 +69,7 @@ function OurFeature() {
                   ={{ margin: '20px 0px 0px 20px' }} />
                 <Card.Body>
                   <Card.Title style={{ fontWeight: 'bold' }}>Internship Experience</Card.Title>
-                  <Card.Text><p className='Card-pera'>Get internship  from industry post your completion of courses that will add credit and experience to your portfolio</p>
+                  <Card.Text><span className='Card-pera'>Get internship  from industry post your completion of courses that will add credit and experience to your portfolio</span>
 
                   </Card.Text>
                 </Card.Body>
@@ -82,11 +82,11 @@ function OurFeature() {
                   ={{ margin: '20px 0px 0px 20px' }} />
                 <Card.Body>
                   <Card.Title style={{ fontWeight: 'bold' }}>Live Classes</Card.Title>
-                  <Card.Text><p className='Card-pera'>
+                  <Card.Text><span className='Card-pera'>
                     Online doesn’t mean recorded video.
                     Our online course will be live classes
-                    tuned by Industry edperts.
-                  </p>
+                    tuned by Industry experts.
+                  </span>
 
                   </Card.Text>
                 </Card.Body>

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Button, Col, Container, Form, Modal, Nav, Navbar, Row } from 'react-bootstrap'
+import { Button, Col, Container, Form, Modal, Nav, Navbar, NavLink, Row } from 'react-bootstrap'
 import Group from "../image/Group 9.png";
 import Rect from "../image/Rectangle 2.png";
 import Vector from "../image/Vector 8.png";
@@ -10,56 +10,99 @@ import yellow from "../image/Mento.jpg";
 import logo from "../image/logo.jpg";
 import right from "../image/banner design (1).png";
 import '../stylepages/HomeBanner.css'
-import { Link } from "react-scroll";
+import { Link } from 'react-scroll';
+
 
 function HomeBanner() {
-    const [show, setShow] = useState(false);
-
+    const [show, setShow] = useState(false)
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
+    const [None, setNone] = useState("");
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [mobile, setMobile] = useState("");
+    const [altmobile, setAltMobile] = useState("");
+    const [ypassing, setYpassing] = useState("");
+    const [graduation, setGraduation] = useState("");
+    const [course, setCourse] = useState("");
+
+
+    const handleSubmit = (e) => {
+
+        // const details = {
+        //     Name: name,
+        //     Email: email,
+        //     Mobile: mobile,
+        //     AltMobile: altmobile,
+        //     YearOfPassing: ypassing,
+        //     Graduation: graduation,
+        //     Course: course
+        // }
+        // console.log(details);
+
+        const webhookURL = 'https://chat.googleapis.com/v1/spaces/AAAATFjjny4/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=qnNSG08dhWk0onOFV6O41M8-Ji9SQ-M_7CvP9rtiIPg%3D'
+
+        const data = JSON.stringify({
+
+
+            "text": `Name:${name}\nEmail:${name}\nMobile:${mobile}\nAltMobile:${altmobile}\nYearOfPassing:${ypassing}\nGraduation:${graduation}\nCourse:${course}`
+
+        });
+        let resp;
+        fetch(webhookURL, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json;charset=UTF-8',
+            },
+            body: data,
+        }).then((response) => {
+            resp = response;
+            console.log(response);
+        });
+
+    }
+
+
     return (
         <div className='HomeBanner'>
             <div className='FirstBanner'>
                 <div className='Header'>
-                    <div className='leftpart'>
-                        <img src={yellow} className='yellow' />
-                    </div>
-                    <div className='rightpart'>
-                        <Navbar expand="lg" style={{ paddingTop: '0rem' }}>
-                            <Container>
-                                <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                                <Navbar.Collapse id="basic-navbar-nav">
-                                    <Nav className="me-auto">
-                                        <Nav.Link href="#home"
-                                        >
-                                            <Link
-                                                to=" Home"
-                                                spy={true}
-                                                smooth={true}
-                                                duration={100}
-                                                delay={1000}
-                                            >
-                                                Home
-                                            </Link>
 
-                                        </Nav.Link>
-                                        <Nav.Link href="#course"
+                    <Navbar collapseOnSelect expand="md">
+                        <Container fluid>
+                            <Navbar.Brand>
+                                <img src={yellow} className="yellow" />
+                            </Navbar.Brand>
+                            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                            <Navbar.Collapse
+                                id="responsive-navbar-nav"
+                            >
+                                <Nav className="me-auto">
+
+                                </Nav>
+                                <Nav style={{ cursor: "pointer" }}>
+                                    <Nav.Link>
+
+                                        Home
+                                    </Nav.Link>
+                                    <Nav.Link>
+                                        <Link
+                                            to="Popular"
+                                            spy={true}
+                                            smooth={true}
+                                            offset={40}
+                                            duration={200}
+                                            delay={1000}
                                         >
-                                            <Link
-                                                to="Popular"
-                                                spy={true}
-                                                smooth={true}
-                                                duration={100}
-                                                delay={1000}
-                                            >
-                                                Course
-                                            </Link>
-                                        </Nav.Link>
-                                    </Nav>
-                                </Navbar.Collapse>
-                            </Container>
-                        </Navbar>
-                    </div>
+                                            Course
+                                        </Link>
+                                    </Nav.Link>
+
+
+                                </Nav>
+                            </Navbar.Collapse>
+                        </Container>
+                    </Navbar>
                 </div>
                 <div className='Contant'>
                     <Row>
@@ -90,49 +133,72 @@ function HomeBanner() {
                                             Register your Interest</Modal.Title>
                                     </Modal.Header>
                                     <Modal.Body>
-                                        <Form>
+                                        <Form onSubmit={handleSubmit}>
                                             <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
                                                 <Form.Label><b>Name</b></Form.Label>
-                                                <Form.Control type="name" />
+                                                <Form.Control type="name" value={name} required={true}
+                                                    onChange={(event) => setName(event.target.value)} />
                                             </Form.Group>
+
                                             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
                                                 <Form.Label><b>Email address</b></Form.Label>
-                                                <Form.Control type="email" />
+                                                <Form.Control type="email" value={email} required={true}
+                                                    onChange={(event) => setEmail(event.target.value)} />
                                             </Form.Group>
+
                                             <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
                                                 <Form.Label><b>Mobile Number</b></Form.Label>
-                                                <Form.Control type="taxt" />
+                                                <Form.Control type="text" value={mobile} required
+                                                    pattern="[6789][0-9]{9}"
+                                                    onChange={(event) => setMobile(event.target.value)} />
                                             </Form.Group>
                                             <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
                                                 <Form.Label><b> Alternate Mobile Number</b></Form.Label>
-                                                <Form.Control type="taxt" />
+                                                <Form.Control type="text" value={altmobile} required
+                                                    pattern="[6789][0-9]{9}"
+                                                    onChange={(event) => setAltMobile(event.target.value)} />
                                             </Form.Group>
                                             <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
                                                 <Form.Label><b> Year of Passing</b></Form.Label>
-                                                <Form.Control type="taxt" />
+                                                <Form.Control type="taxt" value={ypassing} required={true}
+                                                    onChange={(event) => setYpassing(event.target.value)} />
                                             </Form.Group>
                                             <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
                                                 <Form.Label> <b>Graduation</b></Form.Label>
-                                                <Form.Control type="taxt" />
+                                                <Form.Control type="taxt" value={graduation} required={true}
+                                                    onChange={(event) => setGraduation(event.target.value)} />
                                             </Form.Group>
                                             <Form.Label><b>Course of your choice</b></Form.Label>
 
-                                            <Form.Select aria-label="Default select example">
-                                                <option value="1"></option>
-                                                <option value="1">Front End Developer</option>
-                                                <option value="2">React Developer</option>
-                                                <option value="3"> Microsoft Office</option>
-                                                <option value="1">Angular Developer</option>
-                                                <option value="2">Software Testing</option>
-                                                <option value="3"> .Net</option>
-                                                <option value="1">Full Stack Developer (MERN)</option>
-                                                <option value="2">Full Stack Developer (MEAN)</option>
-                                                <option value="3"> Core Java</option>
-                                                <option value="1">Visual Design</option>
-                                                <option value="2">Mobile Application Developer (Android)</option>
-                                                <option value="3"> Mobile Application Developer</option>
+                                            <Form.Select aria-label="Default select example" value={course} required={true}
+                                                onChange={(event) => setCourse(event.target.value)} >
+                                                <option value="1">Course of your choice</option>
+                                                <option value="Front End Developer"
+                                                >Front End Developer</option>
+                                                <option value="React Developer"
+                                                >React Developer</option>
+                                                <option value="Microsoft Office"
+                                                > Microsoft Office</option>
+                                                <option value="Angular Developer"
+                                                >Angular Developer</option>
+                                                <option value="Software Testing"
+                                                >Software Testing</option>
+                                                <option value=".Net"
+                                                > .Net</option>
+                                                <option value="Full Stack Developer (MERN)"
+                                                >Full Stack Developer (MERN)</option>
+                                                <option value="Full Stack Developer (MEAN)"
+                                                >Full Stack Developer (MEAN)</option>
+                                                <option value="Core Java"
+                                                > Core Java</option>
+                                                <option value="Visual Design"
+                                                >Visual Design</option>
+                                                <option value="Mobile Application Developer (Android)"
+                                                >Mobile Application Developer (Android)</option>
+                                                <option value="Mobile Application Developer"
+                                                > Mobile Application Developer</option>
                                             </Form.Select>
-                                            <Button type='submit' className='sumbit-btn'>Submit</Button>
+                                            <Button className='sumbit-btn' type='submit'>Submit</Button>
                                         </Form>
                                     </Modal.Body>
 
@@ -213,7 +279,7 @@ function HomeBanner() {
                     </Col>
                 </Row>
             </div>
-        </div>
+        </div >
     )
 }
 
